@@ -1,0 +1,11 @@
+development:
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  database: autotunes-dev
+
+test:
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  database: autotunes-test

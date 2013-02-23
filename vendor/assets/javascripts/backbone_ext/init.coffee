@@ -1,0 +1,3 @@
+window.BackboneExt =
+  Collections: {}
+  Views: {}

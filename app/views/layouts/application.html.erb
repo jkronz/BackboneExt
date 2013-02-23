@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BackboneExt Demo Page</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+
+</div>
+<%= yield %>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="/">BackboneExt</a>
+
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="http://github.com/jkronz/backboneext" data-bypass>View on Github</a></li>
+          <li><a href="http://justinkronz.com" data-bypass>Justin</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+
+<div class="container">
+   <div class="row">
+     <div class="span3 sidebar">
+       <ul class="nav nav-tabs nav-stacked">
+         <li><a href="/users">Local Collection</a></li>
+         <li><a href="/companies">Server Backed Collection</a></li>
+       </ul>
+     </div>
+     <div class="span9 application-container"></div>
+   </div>
+</div>
+<%= javascript_include_tag "application" %>
+</body>
+</html>
